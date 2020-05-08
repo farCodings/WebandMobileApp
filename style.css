@@ -2,7 +2,7 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-body{
+html, body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -47,6 +47,16 @@ header div p{
     font-size: small;
 }
 
+#toggle{
+    display: none;
+}
+
+label{
+    display: none;
+    margin: 0 40px 0 0;
+    font-size: 26px;
+}
+
 nav{
     display: flex;
     flex-wrap: wrap;
@@ -62,7 +72,7 @@ nav{
 }
 
 #logo{
-    width: 209px;
+    width: ;
     height: 57px;
     margin: 3px 50px 3px;
 }
@@ -336,6 +346,22 @@ footer div li{
     padding: 50px 0;
 }
 
-@media only screen and (max-width: 600px){
-    
+@media only screen and (max-width: 600px) and (max-width: 900px){
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    label{
+        display: block;
+        float: right;
+    }
+    nav ul{
+        display: none;
+    }
+    div{
+        display: flex;
+        
+    }
+
 }
