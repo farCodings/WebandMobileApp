@@ -8,9 +8,9 @@ html, body{
     box-sizing: border-box;
 }
 
-main{
+/* main{
     width: 100%;
-}
+} */
 
 .top_bar{
     display: inline-block;
@@ -72,8 +72,8 @@ nav{
 }
 
 #logo{
-    width: ;
-    height: 57px;
+    width: 18%;
+    height: 8%;
     margin: 3px 50px 3px;
 }
 
@@ -346,8 +346,18 @@ footer div li{
     padding: 50px 0;
 }
 
-@media only screen and (max-width: 600px) and (max-width: 900px){
+@media screen and (max-width: 480px) {
+    body{
+        background-color: lawngreen;
+    }
+    .top_bar{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
     nav{
+        
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -359,9 +369,15 @@ footer div li{
     nav ul{
         display: none;
     }
-    div{
-        display: flex;
-        
-    }
+    /* #logo{
+        width: 97px;
+        height: 19px;
+    } */
 
 }
+/* @media only screen and (max-width: 900px) {
+    body{
+        background-color: lawngreen;
+    }
+
+} */
